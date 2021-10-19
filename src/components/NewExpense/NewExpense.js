@@ -6,7 +6,7 @@ import FormExpense from './FormExpense';
 const NewExpense = (props) => {
 
     const saveExpenseDataHandler = (enteredExpenseData) => {
-        const expenseData = {...encodeURIComponent,
+        const expenseData = {...enteredExpenseData,
         id: Math.random().toString(),
         };
         console.log(expenseData);
