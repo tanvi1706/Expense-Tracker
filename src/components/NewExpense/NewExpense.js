@@ -11,6 +11,7 @@ const NewExpense = (props) => {
         };
         console.log(expenseData);
         props.onAddExpense(expenseData);
+        setFlag(false);
     };
 
     const newFlag = (val) => {
